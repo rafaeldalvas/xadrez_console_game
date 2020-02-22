@@ -10,5 +10,9 @@ namespace board {
             this.column = column;
             pieces = new Piece[line, column];
         }
+
+        public Piece piece(int line, int column) {
+            return pieces[line, column];
+        }
     }
 }
