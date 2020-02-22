@@ -14,5 +14,10 @@ namespace board {
         public Piece piece(int line, int column) {
             return pieces[line, column];
         }
+
+        public void insertPiece(Piece p, Position pos) {
+            pieces[pos.line, pos.column] = p;
+            p.position = pos;
+        }
     }
 }
