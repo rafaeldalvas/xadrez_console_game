@@ -1,18 +1,14 @@
 ﻿
-
 namespace board {
-    class Position {
+    class Board {
         public int line { get; set; }
         public int column { get; set; }
+        private Piece[,] pieces;
 
-        public Position(int line, int column) {
+        public Board(int line, int column) {
             this.line = line;
             this.column = column;
+            pieces = new Piece[line, column];
         }
-
-        public override string ToString() {
-            return line + ", " + column;
-        }
-
     }
 }
