@@ -12,6 +12,8 @@ namespace board {
             this.color = color;
             this.movementCount = 0;
         }
-
+        public void moveCounterInc() {
+            movementCount++;
+        }
     }
 }
